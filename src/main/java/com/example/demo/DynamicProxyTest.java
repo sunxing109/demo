@@ -34,5 +34,6 @@ public class DynamicProxyTest {
     public static void main(String[] args) {
         IHello hello = (IHello) new DynamicProxy().bind(new Hello());
         hello.sayHello();
+        System.out.println("welcome hello world");
     }
 }
